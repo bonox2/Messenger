@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1140;
+    margin: 0 auto;
+}
+
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.reg_form, .log_in_form{
+    border: 2px solid darkgray;
+    padding: 15px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.reg_form input, .log_in_form input{
+    margin-bottom: 10px;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgb(124, 124, 124);
+    padding: 10px;
+}
+.actionbtn{
+    border: 2px solid rgb(90, 189, 156);
+    padding: 8px 15px;
+    border-radius: 32px;
+}
+.actionbtn:hover{
+    transition: .3s;
+    background:rgb(90, 189, 156);
+    color: #fff;
+}
+
+.display{
+    display: none;
+}
+.header{
+    width: 100%;
+    border: 2px solid darkgray;
+    padding: 15px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
