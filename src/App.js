@@ -3,8 +3,8 @@ import { useAuth } from './hooks/useAuth';
 import LoginForm from './components/LoginForm';
 import Header from './components/Header';
 import Contacts from './components/Contacts';
-import Profile from './components/Profile';
-import ImageProfile from './components/Image';
+import Chat from './components/Chat';
+
 
 function App() {
   const { user, loading } = useAuth();
@@ -15,9 +15,12 @@ function App() {
       <div className="container">
         <Header></Header>
         {user && 
-        <section className='interface'>
-          <ImageProfile></ImageProfile>
-        </section>
+        <container>
+          <section className='interface'>
+            <Contacts></Contacts>
+            <Chat></Chat>
+          </section>
+        </container>
         }
         
 

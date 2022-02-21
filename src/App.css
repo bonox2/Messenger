@@ -102,3 +102,47 @@ table {
     align-items: center;
     margin-top: 20px;
 }
+
+.interface{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*     conatcs css    */
+
+.search_contact{
+    width: 350px;
+    color: darkgray;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid darkgray;
+    margin: 10px 0;
+}
+.contact_section{
+    width: 350px;
+    padding:15px 40px ;
+    border: 1px gray solid;
+    display: flex;
+}
+
+.contact_name{
+    margin-bottom: 5px;
+}
+
+.profile_pic{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+/*     conatcs css  end  */
+
+/*     chat css    */
+
+
+.chat{
+    border: 2px solid darkgray;
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0 0 10px;
+}
