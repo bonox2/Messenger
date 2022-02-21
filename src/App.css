@@ -110,6 +110,13 @@ table {
 
 /*     conatcs css    */
 
+.contacts .contact_section:first-child {
+    border-radius: 8px 8px 0 0 ;
+}
+.contacts .contact_section:last-child {
+    border-radius:0 0 8px 8px  ;
+    border-bottom: 2px darkgray solid;
+}
 .search_contact{
     width: 350px;
     color: darkgray;
@@ -121,7 +128,9 @@ table {
 .contact_section{
     width: 350px;
     padding:15px 40px ;
-    border: 1px gray solid;
+    border-top: 2px darkgray solid;
+    border-left: 2px darkgray solid;
+    border-right: 2px darkgray solid;
     display: flex;
 }
 
@@ -133,6 +142,8 @@ table {
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    border-radius: 999px;
+    overflow: hidden;
 }
 
 /*     conatcs css  end  */
@@ -141,8 +152,30 @@ table {
 
 
 .chat{
+    display: flex;
+    position: relative;
     border: 2px solid darkgray;
     width: 100%;
     border-radius: 8px;
     margin: 10px 0 0 10px;
+}
+.chat_top{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.chat_bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.chat_msg{
+    border: none;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px darkgray solid;
+    width:100%;
+    padding:15px
 }
