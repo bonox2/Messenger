@@ -2,7 +2,7 @@ import './App.css';
 import { useAuth } from './hooks/useAuth';
 import LoginForm from './components/LoginForm';
 import Header from './components/Header';
-import Contacts from './components/Contacts';
+import Contacts from './components/Contacts-main';
 import Chat from './components/Chat';
 
 
