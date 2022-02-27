@@ -4,7 +4,7 @@ import LoginForm from './components/LoginForm';
 import Header from './components/Header';
 import Contacts from './components/Contacts-main';
 import Chat from './components/Chat';
-
+import JSONDATA from './MOCK_DATA.json'
 
 function App() {
   const { user, loading } = useAuth();
@@ -35,5 +35,5 @@ function App() {
     </div>
   );
 }
-
+  
 export default App;
