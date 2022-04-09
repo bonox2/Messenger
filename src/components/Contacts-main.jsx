@@ -12,6 +12,8 @@ function Contacts() {
 
           <div className='contacts'>
             <ContactSection/>
+            <ContactSection/>
+            <ContactSection/>
           </div>
       </section>
     )

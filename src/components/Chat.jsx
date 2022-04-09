@@ -22,9 +22,7 @@ function Chat() {
               </div>
           </div>
           <div className="chat_bottom">
-            <form>
               <input type="text" placeholder='Type a message' name="send message" className='chat_msg'/>
-            </form>
           </div>
       </section>
     )
