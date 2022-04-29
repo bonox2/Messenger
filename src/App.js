@@ -4,28 +4,24 @@ import LoginForm from './components/LoginForm';
 import Header from './components/Header';
 import Contacts from './components/Contacts-main';
 import Chat from './components/Chat';
-
+import { useEffect } from 'react';
 
 function App() {
   const { user, loading } = useAuth();
+  useEffect(() => {
+    console.log('user >>>', user);
+  }, [user]);
 
-  
   return (
     <div className="app">
       <div className="container">
         <Header></Header>
-        {user && 
-        <container>
-          <section className='interface'>
+        {user && (
+          <section className="interface">
             <Contacts></Contacts>
             <Chat></Chat>
           </section>
-        </container>
-        }
-        
-
-
-
+        )}
         {!user && (
           <section className="forms">
             <LoginForm />
@@ -35,5 +31,5 @@ function App() {
     </div>
   );
 }
-  
+
 export default App;

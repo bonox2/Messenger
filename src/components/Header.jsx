@@ -6,6 +6,7 @@ function Header() {
     <>
       {user && (
         <header className="header">
+          <h1>{user && user.nickname}</h1>
           <button className="actionbtn" type="submit" onClick={() => signout()}>
             Log out
           </button>

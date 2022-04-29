@@ -16,7 +16,8 @@ function LoginForm() {
     if (formType === 'signin') {
       signin(email, password);
     } else {
-      signup(email, password);
+      const nickname = event.target.nickname.value.trim();
+      signup({email, password, nickname});
     }
   }
   function changeFormType() {
@@ -33,13 +34,26 @@ function LoginForm() {
         <h1>{formType === 'signin' ? 'Login form' : 'Registration form'}</h1>
         {error && <h2>{error.message}</h2>}
         <input name="email" type="email" placeholder="Enter your email" />
-        <input name="password" type="password" placeholder="Enter your password" />
+        <input
+          name="password"
+          type="password"
+          placeholder="Enter your password"
+        />
+        {formType === 'signup' && (
+          <input
+            name="nickname"
+            type="text"
+            placeholder="Enter your nickname"
+          />
+        )}
         <button className="actionbtn" type="submit">
           OK
         </button>
       </form>
       <button onClick={changeFormType}>
-        {formType === 'signin' ? "Don't have an account? Register!" : 'Have an account? Sign in!'}
+        {formType === 'signin'
+          ? "Don't have an account? Register!"
+          : 'Have an account? Sign in!'}
       </button>
     </>
   );
