@@ -214,14 +214,5 @@ table {
     border-radius: 0 0 8px 8px;
     border-top: 1px darkgray solid;
     width:100%;
-}
-.msg_send{
-    width: 90%;
-    padding:15px;
-    border: none;
-    background-color: transparent;
-}
-.send_btn{
-    margin:0 auto;
-    
+    padding:15px
 }

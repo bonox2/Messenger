@@ -7,6 +7,7 @@ import {
 } from 'firebase/auth';
 import { auth } from '../firebase';
 import { useDB } from './useDB';
+import { getDB } from './useDB';
 
 const AuthContext = createContext();
 
@@ -26,6 +27,8 @@ function useProvideAuth() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const { setDocument } = useDB();
+  const { getDocument } = useDB();
+  
 
   function signin(email, password) {
     setLoading(true);
@@ -86,21 +89,7 @@ function useProvideAuth() {
         setLoading(false);
       }
       if (user) {
-        const userData = {
-          toFirestore: (user) => {
-              return {
-                  id: user.id,
-                  name: user.name,
-                  nickname: user.nickname,
-                  };
-          },
-          fromFirestore: (snapshot, options) => {
-              const data = snapshot.data(options);
-              return new userData(data.id, data.name, data.nickname);
-          }
-      };
-        const doc = document.getElementById(user);
-        setUser(user);
+        return(getDocument)
       } else {
         console.log('AuthStateChanged >>>', false);
         setUser(false);

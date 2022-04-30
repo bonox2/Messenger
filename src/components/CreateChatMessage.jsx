@@ -1,14 +1,14 @@
 export default function CreateChatMessage() {
   function sendMessage() {}
   return (
-    <form onSubmit={sendMessage} className="chat_msg">
+    <form onSubmit={sendMessage}>
       <input
         type="text"
         placeholder="Type a message"
         name="messageText"
-        className="msg_send"
+        className="chat_msg"
       />
-      <button type="submit" className="send_btn">Send</button>
+      <button type="submit">Send</button>
     </form>
   );
 }
