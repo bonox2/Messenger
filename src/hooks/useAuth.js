@@ -7,7 +7,6 @@ import {
 } from 'firebase/auth';
 import { auth } from '../firebase';
 import { useDB } from './useDB';
-import { getDB } from './useDB';
 
 const AuthContext = createContext();
 
@@ -27,7 +26,7 @@ function useProvideAuth() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const { setDocument } = useDB();
-  const { getDocument } = useDB();
+  const { getDocument } = useDB(); 
   
 
   function signin(email, password) {

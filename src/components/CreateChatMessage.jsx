@@ -1,7 +1,7 @@
 export default function CreateChatMessage() {
   function sendMessage() {}
   return (
-    <form onSubmit={sendMessage}>
+    <form onSubmit={sendMessage} className="form_send">
       <input
         type="text"
         placeholder="Type a message"

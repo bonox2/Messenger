@@ -201,18 +201,27 @@ table {
 }
 .chat_message.outcome{
     align-self: flex-end;
+    border: none;
+    border-radius: 12px;
+    background: lightskyblue;
 }
 .chat_message.income{
     align-self: flex-start;
+    border: none;
+    border-radius: 12px;
+    background: lightgrey;
 }
 .chat_bottom{
     display: flex;
     width: 100%;
+    border-top: 1px solid darkgray;
 }
 .chat_msg{
     border: none;
     border-radius: 0 0 8px 8px;
-    border-top: 1px darkgray solid;
-    width:100%;
+    width:90%;
     padding:15px
+}
+.form_send{
+    width: 100%;
 }
